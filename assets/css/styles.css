@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('../images/chalkboard-texture-3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #EFEFE8;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.gameboard-container {
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    background: rgb(93, 91, 93, 0.8);
+}
+
+.gameboard-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.result-window {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.result-text-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.board-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+}
+
+.board-row {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.board-col {
+    background-color: rgb(46, 42, 44, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.tic-tac-toe-letter {
+    font-size: 3.5rem;
+}
